@@ -1,0 +1,207 @@
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --font-base-size: 16px;
+    --font-mobile-size: 14px;
+    --color-heading: #121212;
+    --color-accent: #0BCEAF;
+    --color-bg: #FCFCFC;
+    --color-paragraph: #D6D6D6;
+    --color-border: #383838;
+    --base-bg: #F5F8F9;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --radius-16: 16px;
+    --fancy-grey: #d5d5d5;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 8%;
+    font-family: var(--font-family);
+    font-size: var(--font-mobile-size);
+    font-weight: 300;
+    background-color: var(--color-bg);
+}
+.hero-box {
+    padding: 2em;
+}
+
+img {
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* border-radius: inherit; */
+    
+    display: block;
+    
+
+    width: 80%;
+    height: 10%;
+    /* height: 78%; */
+    border-radius: 20%;
+    border: 1em solid rgba(0, 0, 0, 0.07);
+    /* border-style: solid; */
+    /* border-width: 1em; */
+    /* border-color: rgba(0, 0, 0, 0.07); */
+    margin: 0 auto;
+    
+    position: relative;
+}
+#myname {
+    text-align: center;
+    line-height: .9em;
+    align-self: center;
+    margin-top: 1em;
+}
+#job-title {
+    color: rgb(136, 136, 136);
+    margin-top: 0.3em;
+    font-weight: 500;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 0;
+}
+.links {
+    text-align: center;
+    padding: .5em;
+}
+#tel-no, #email-link {
+    display: inherit;
+}
+.links a, i {
+    color: var(--color-heading);
+    text-decoration: none;
+}
+.social-link {
+    padding: 4px 6px;
+    font-size: 28px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.title {
+    display: inline-block;
+}
+.fancy-underline {
+    background-color: var(--fancy-grey);
+    max-width: 100%;
+}
+.fancy-underline-color {
+    height: 0.125em;
+    background-color: var(--color-accent);
+    width: 30px;
+}
+#abt-me-para1, .exp-desc, .edu-desc, .project-desc {
+    color: #666;
+    text-align: justify;
+    /* font-style: italic; */
+}
+.abt-me, .skills, .exp, .edu, .mentions, .projects {
+    padding: 1em;
+    margin-top: .7em;
+    border: 1px solid #e5e5e5;
+    border-radius: var(--radius-16);
+    background-color: var(--base-bg);
+}
+#abt-me-para2 {
+    display: none;
+}
+
+.skill-point {
+    margin-bottom: 1em;
+    /* border: 1px solid black; */
+}
+
+.progress-bar {
+    margin-top: .4em;
+    border: 1px solid grey;
+    border-radius: var(--radius-16);
+    background-color: var(--color-bg);
+    opacity: 0.8;
+    /* background-color: var(--fancy-grey); */
+}
+.percentage {
+    height: 8px;
+    background-color: var(--color-accent);
+    border-radius: var(--radius-16);
+}
+.progress-value {
+    color: #666;
+    float: right;
+}
+
+#js-progress { width: 40%; }
+#css-progress { width: 80%; }
+#html-progress { width: 95%;}
+#btsp-progress { width: 60%; }
+#git-progress { width: 40%;}
+#fig-progress { width: 40%; }
+#googling-progress { width: 60%; }
+#psolving-progress { width: 60%; }
+#bstorming-progress { width: 55%; }
+
+.date {
+    color: var(--color-accent);
+    font-variant: small-caps;
+    text-align: justify;
+}
+
+hr {
+    height: 2px;
+    background-color: #e5e5e5;
+    border: none;
+}
+.mentions {
+    display: grid;
+    grid-template: "I4G zuri hng" ;
+}
+.mentions1 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-area: I4G;
+    margin: 0;
+}
+.mentions2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-area: zuri;
+    margin: 0;
+}
+.mentions3 {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-area: hng;
+    margin: 0;
+}
+.mentions-logo {
+    height: 64px;
+    width: 64px;  
+    margin: 0 auto; 
+}
+/* .mentions-container {
+    padding: 2px 46px 2px 46px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: auto;
+    width: 33.33%;
+    
+}  */
+.mentions-name {
+    font-weight: 700;
+    text-align: center;
+}
+
+.projects a {
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+.mentions a {
+    text-decoration: none;
+    color: black;
+    background-color: inherit;
+}

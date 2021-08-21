@@ -1,0 +1,135 @@
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --font-base-size: 16px;
+    --color-heading: #121212;
+    --color-accent: #0BCEAF;
+    --color-bg: #FCFCFC;
+    --color-paragraph: #D6D6D6;
+    --color-border: #383838;
+    --base-bg: #F5F8F9;
+    --radius-16: 16px;
+    --fancy-grey: #d5d5d5;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 7%;
+    font-family: var(--font-family);
+    font-size: var(--font-base-size);
+    font-weight: 300;
+    background-color: var(--color-bg);
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%; padding: 2em;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%; padding: 2em;}
+
+.hero-box {
+    display: flex;
+    height: 400px !important;
+    margin-bottom: 2em;
+}
+
+img {
+    width: 45%;
+    height: 95%;
+    border-radius: 10%;
+    border: 1em solid rgba(0, 0, 0, 0.07);
+    float: left;
+    margin: 0;
+    align-items: center;
+}
+
+.bio {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-content: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#myname {
+    font-size: 1.7em;
+    line-height: 1.3em;
+    margin-bottom: 0;
+    text-align: left;
+}
+#job-title {
+    color: rgb(136, 136, 136);
+    margin-top: 0.3em;
+    font-weight: 500;
+    font-size: 1.3em;
+    text-align: left;
+}
+.links {
+    text-align: left;
+}
+#tel-no, #email-link {
+    display: inherit;
+}
+.links a, i {
+    color: var(--color-heading);
+    text-decoration: none;
+}
+.social-container {
+    padding: 0;
+}
+.social-link {
+    padding: 4px 0;
+    font-size: 28px;
+    margin-left: 0;
+}
+
+#abt-me-para2, .exp-desc, .edu-desc, .project-desc {
+    color: #666;
+    text-align: justify;
+}
+.abt-me, .skills, .exp, .edu, .mentions, .projects {
+    padding: 1em;
+    margin-top: .7em;
+    border: 1px solid #e5e5e5;
+    border-radius: var(--radius-16);
+    background-color: var(--base-bg);
+}
+#abt-me-para2 {
+    display: block;
+}
+#abt-me-para1 {
+    display: none;
+}
+
+.title {
+    display: inline-block;
+}
+.fancy-underline {
+    background-color: var(--fancy-grey);
+    max-width: 100%;
+}
+.fancy-underline-color {
+    height: 0.125em;
+    background-color: var(--color-accent);
+    width: 30px;
+}
+
+.skill-container {
+    display: flex;
+}
+
+.section {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0;
+}
